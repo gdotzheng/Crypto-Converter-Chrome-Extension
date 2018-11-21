@@ -1,0 +1,14 @@
+{
+  "name": "Crypter",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Convert between crypto and fiat anywhere",
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab"]
+}

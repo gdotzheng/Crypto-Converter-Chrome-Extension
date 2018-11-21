@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>
+    Crypto Converter
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta charset="UTF-8">
+
+  <!-- jQuery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <!-- Bootstrap Select -->
+  <script src="js/bootstrap-select.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap-select.css"/>
+
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css"/>
+
+  <!-- Custom Style and Script -->
+  <script type="text/javascript" src="js/background.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles/stylesheet.css"/>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700');
+
+    body {
+     width:250px;
+    }
+
+    h1 {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: 600;
+      background-color: #f9f9f9;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    .form-control {
+        width: 100%
+      }
+
+      select {
+        width: 100%;
+    }
+
+    .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
+      width: 220px;
+    }
+
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 500px;
+      text-align: left;
+    }
+
+    .top-margin {
+      margin-top: 20px;
+    }
+
+    .top-margin-25 {
+      margin-top: 25px;
+    }
+
+    .bottom-margin {
+      margin-bottom: 20px;
+    }
+
+    .bottom-margin-25 {
+      margin-bottom: 25px;
+    }
+
+    .chosen-container .chosen-results {
+      max-height:100px;
+    }
+
+    </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="row header top-margin bottom-margin" align="center">
+      Crypto Converter
+    </h1>
+    <div class="row">
+      <div class="col-lg-5 col-lg-offset-1">
+        <input type="text" class="form-control" id="amount" value="1">
+      </div>
+      <div class="col-lg-5 col-lg-offset-0">
+        <input type="text" class="form-control" id="result" disabled>
+        </div>
+      </div>
+      <br>
+      <div class=" row">
+        <div class="col-lg-5 col-lg-offset-1">
+          <select class="selectpicker" id="from" data-live-search="true">
+            <optgroup label = "Crypto">
+            <option selected value="BTC">Bitcoin</option>
+            <option value="XRP">XRP</option>
+            <option value="ETH">Ethereum</option>
+            <option value="XLM">Stellar</option>
+            <option value="BCH">Bitcoin Cash</option>
+            <option value="EOS">EOS</option>
+            <option value="LTC">Litecoin</option>
+            <option value="ADA">Cardano</option>
+            <option value="XMR">Monero</option>
+            <option value="TRX">TRON</option>
+            <option value="IOT">IOTA</option>
+            <option value="DASH">Dash</option>
+            <option value="XEM">NEM</option>
+            <option value="NEO">NEO</option>
+            <option value="ETC">Ethereum Classic</option>
+            <option value="ZEC">Zcash</option>
+            <option value="BTG">Bitcoin Gold</option>
+            <optgroup label = "Fiat">
+            <option value="USD">US Dollar</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="AUD">Australian Dollar</option>
+            <option value="JPY">Japanese Yen</option>
+          </select>
+        </div>
+        <div class="col-lg-5 col-lg-offset-0">
+          <select class="selectpicker" id="to" data-live-search="true">
+            <optgroup label = "Fiat">
+            <option value="USD" selected>US Dollar</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="AUD">Australian Dollar</option>
+            <option value="JPY">Japanese Yen</option>
+            <optgroup label = "Crypto">
+            <option value="BTC">Bitcoin</option>
+            <option value="XRP">XRP</option>
+            <option value="ETH">Ethereum</option>
+            <option value="XLM">Stellar</option>
+            <option value="BCH">Bitcoin Cash</option>
+            <option value="EOS">EOS</option>
+            <option value="LTC">Litecoin</option>
+            <option value="ADA">Cardano</option>
+            <option value="XMR">Monero</option>
+            <option value="TRX">TRON</option>
+            <option value="IOT">IOTA</option>
+            <option value="DASH">Dash</option>
+            <option value="XEM">NEM</option>
+            <option value="NEO">NEO</option>
+            <option value="ETC">Ethereum Classic</option>
+            <option value="ZEC">Zcash</option>
+            <option value="BTG">Bitcoin Gold</option>
+          </select>
+        </div>
+      </div>
+      <h1 class="row header top-margin-25" align="center">
+        <span id=coin></span> Data
+      </h1>
+      <p><b>24 Hour Volume: </b><span id=24hrvolume></span></p>
+      <p><b>24 Hour Change: </b><span id=24hrchange></span></p>
+      <p class = bottom-margin><b>Last Update: </b><span id=lastupdate></span></p>
+    </div>
+</body>
+
+</html>
