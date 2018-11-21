@@ -1,8 +1,8 @@
 {
-  "name": "Crypter",
+  "name": "Crypto Converter",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Convert between crypto and fiat anywhere",
+  "description": "Convert all your favorite cryptocurrencies to fiat currencies",
   "background": {
     "scripts": ["js/background.js"]
   },
