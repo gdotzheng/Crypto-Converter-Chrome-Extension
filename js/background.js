@@ -15,7 +15,7 @@ window.onload = function convert() {
   var to = document.getElementById('to').value;
   var xmlhttp = new XMLHttpRequest();
   var url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + from + "&tsyms=" + to;
-  var crypto = ['BTC', 'XRP', 'ETH', "BCH", 'XLM', 'EOS', 'LTC', 'ADA', 'XMR', 'TRX', 'DASH', 'XEM', 'ETC', 'NEO', 'ZEC', 'BTG']
+  var crypto = ['BTC', 'ETH', 'XRP', 'LINK', 'BCH', 'BSV', 'BTG', 'LTC', 'ADA', 'XTZ', 'BNB', 'CRO', 'EOS', 'XLM', 'XMR', 'TRX', 'ATOM', 'NEO', 'DASH', 'ZEC', 'ETC']
   xmlhttp.open('GET', url, true);
   xmlhttp.send();
   xmlhttp.onreadystatechange = function() {
@@ -55,7 +55,7 @@ function convert() {
   var to = document.getElementById('to').value;
   var xmlhttp = new XMLHttpRequest();
   var url = "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=" + from + "&tsyms=" + to;
-  var crypto = ['BTC', 'XRP', 'ETH', "BCH", 'XLM', 'EOS', 'LTC', 'ADA', 'XMR', 'TRX', 'DASH', 'XEM', 'ETC', 'NEO', 'ZEC', 'BTG']
+  var crypto = ['BTC', 'ETH', 'XRP', 'LINK', 'BCH', 'BSV', 'BTG', 'LTC', 'ADA', 'XTZ', 'BNB', 'CRO', 'EOS', 'XLM', 'XMR', 'TRX', 'ATOM', 'NEO', 'DASH', 'ZEC', 'ETC']
   xmlhttp.open('GET', url, true);
   xmlhttp.send();
   xmlhttp.onreadystatechange = function() {
